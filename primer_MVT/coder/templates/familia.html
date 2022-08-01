@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>familia</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <h3>Informacion de familiares</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre -</th>
+          <th>Edad -</th>
+          <th>Fecha de nacimiento</th>
+        </tr>
+      </thead>
+      {% for lista_familiares in familia %}
+
+      <tr>
+        <td>{{lista_familiares.nombre}}</td>
+        <td>{{lista_familiares.edad}}</td>
+        <td>{{lista_familiares.fecha_de_nacimiento}}</td>
+      </tr>
+
+      {% endfor %}
+    </table>
+  </body>
+</html>
